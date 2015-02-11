@@ -1,11 +1,11 @@
 App = Ember.Application.create();
 
 App.Router.map(function() {
-  this.route("about", { path: "/about" });
-  this.route("portfolio", { path: "/portfolio" });
-  this.route("resume", { path: "/resume" });
+  this.resource("about", { path: "/" });
+  this.route("portfolio");
+  this.route("resume");
 });
 
 App.IndexRoute = Ember.Route.extend({
-  
+
 });
